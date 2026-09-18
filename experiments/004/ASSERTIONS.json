@@ -1,0 +1,92 @@
+{
+  "minimum_motifs": 4,
+  "deep_motifs": [
+    "O3",
+    "O4",
+    "O5"
+  ],
+  "motifs": {
+    "O1": {
+      "alpha": [
+        101
+      ],
+      "beta": [
+        201
+      ],
+      "min_alpha_overlap": 1,
+      "min_beta_overlap": 1
+    },
+    "O2": {
+      "alpha": [
+        102,
+        103
+      ],
+      "beta": [
+        202,
+        203
+      ],
+      "min_alpha_overlap": 2,
+      "min_beta_overlap": 2
+    },
+    "O3": {
+      "alpha": [
+        101,
+        103,
+        104
+      ],
+      "beta": [
+        201,
+        203,
+        204
+      ],
+      "min_alpha_overlap": 3,
+      "min_beta_overlap": 3
+    },
+    "O4": {
+      "alpha": [
+        104,
+        105,
+        106
+      ],
+      "beta": [
+        204,
+        205,
+        206
+      ],
+      "min_alpha_overlap": 3,
+      "min_beta_overlap": 3
+    },
+    "O5": {
+      "alpha": [
+        105,
+        107,
+        108
+      ],
+      "beta": [
+        205,
+        207,
+        208
+      ],
+      "min_alpha_overlap": 3,
+      "min_beta_overlap": 3
+    }
+  },
+  "required_alpha_residuals": [
+    109
+  ],
+  "required_beta_residuals": [
+    209
+  ],
+  "gamma_breaker_events": [
+    301,
+    303,
+    304
+  ],
+  "required_rejected_overclaims": [
+    "full-trace isomorphism",
+    "natural identity",
+    "identical operational meaning",
+    "identical authority semantics"
+  ],
+  "expected_max_promotion": "SUPPORTED_CANDIDATE"
+}
