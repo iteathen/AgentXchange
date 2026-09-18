@@ -4,6 +4,10 @@
 **Evidence class:** local deterministic smoke evidence only; not qualification  
 **Spec:** `AGENT_X_CHANGE_SPEC_DRAFT_0_1_CANDIDATE.md`
 
+## Execution note
+
+The committed `smoke-tests.mjs` harness was executed directly under Node after the initial fixture setup and reproduced the recorded result exactly.
+
 ## Result
 
 ```text
@@ -50,15 +54,8 @@ The same semantic identity can be reused with the same meaning. A second incompa
 
 The run does not qualify Agent X-Change.
 
-It does not demonstrate that fresh agents can reconstruct a native ISOgraph Agent X-Change packet, nor that the eventual surface form is compact or efficient. It also does not exercise ISOgraph discovery, QU, NEI, deep factorization, external transport, or runtime execution.
+It does not demonstrate that fresh external agents can reconstruct a native ISOgraph Agent X-Change packet, nor that the eventual surface form is compact or efficient. It also does not exercise ISOgraph discovery, QU, NEI, deep factorization, external transport, or runtime execution.
 
-## Next cheap tests suggested by the result
+## Follow-up
 
-The next low-cost step should be a small native ISOgraph fixture vocabulary and 3–4 isolated reconstruction packets:
-
-1. minimal communicate packet;
-2. shallow packet versus stronger-evidence obligation;
-3. request versus authorization versus observed effect;
-4. unresolved/QU-backed packet.
-
-Those should remain separate from a full qualification campaign until the first AX vocabulary is frozen.
+The suggested native-packet smoke pass was completed as Experiment 002 under `experiments/002/`.
