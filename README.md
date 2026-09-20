@@ -979,3 +979,11 @@ and expose much deeper structure only when the task actually needs it.}
 # License
 
 AgentXchange is licensed under the [GNU Affero General Public License v3.0](LICENSE).
+
+## Automated checks
+
+The `verify` check runs on pull requests and pushes to main and release branches.
+Run `node tools/verify-repository.mjs` locally to check required documents, UTF-8,
+merge markers, JSON and JavaScript syntax, and relative Markdown file links.
+CI also runs the smoke suites in experiments 001–003 and the experiment 004
+corpus preflight. These checks validate the existing fixtures, not full protocol conformance.
