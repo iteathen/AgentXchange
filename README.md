@@ -33,6 +33,12 @@ The current specification is intentionally early and falsifiable:
 
 Agent X-Change is **not yet a qualified standard**. The current work is specification research backed by small deterministic experiments and an upcoming cold structural-discovery test.
 
+## Evidence and external baselines
+
+Start with [EVIDENCE.md](EVIDENCE.md), the machine-readable [claim registry](evidence/claims.json), and the [external-evidence index](evidence/external/README.md).
+
+The first fair RFC 8259 comparison is intentionally unfavorable to Agent X-Change on raw text size: across the four frozen Experiment 002 relation-tuple tasks, minified JSON uses **132 bytes** versus **136 bytes** for whitespace-minimized equivalent AX text, while preserving all four tuples exactly. No raw-text byte advantage is claimed for these fixtures, and broader semantic/efficiency/security superiority remains unvalidated.
+
 ---
 
 ## Why Agent X-Change exists
