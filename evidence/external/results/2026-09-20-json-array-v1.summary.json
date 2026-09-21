@@ -1,0 +1,35 @@
+{
+  "schema": "agentx-external-json-array-baseline-summary-v1",
+  "evidenceClass": "REFERENCE-GROUNDED",
+  "sourceRevision": "6f5f256b4c35784c946f10c6168880196062cd64",
+  "externalReference": {
+    "name": "JSON",
+    "specification": "RFC 8259 / STD 90",
+    "url": "https://www.rfc-editor.org/rfc/rfc8259.html"
+  },
+  "comparison": {
+    "taskCount": 4,
+    "allSemanticTupleRoundTripsPassed": true,
+    "checkedInAgentXBytes": 165,
+    "compactEquivalentAgentXBytes": 136,
+    "minifiedJsonArrayBytes": 132,
+    "jsonMinusCompactAgentXBytes": -4,
+    "perTaskJsonMinusCompactAgentXBytes": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "artifact": {
+    "workflowRunId": 35552241112,
+    "artifactId": 10619205450,
+    "artifactDigest": "sha256:4e76fd983257a18c625ebd6f6f3546b88d20024e251b7736f8b185b3fed680c7"
+  },
+  "limitations": [
+    "Comparison uses the same shared numeric relation vocabulary and ordered arguments in both encodings.",
+    "The JSON packet schema is explicitly frozen by this campaign; RFC 8259 specifies JSON syntax, not Agent X-Change semantics.",
+    "Compact Agent X-Change strings are equivalent whitespace-minimized forms for this frozen experiment subset and are not declared canonical IsoGraph serialization.",
+    "No parser-speed, general protocol superiority, compression, binary encoding, or schema-discovery-cost claim is made."
+  ]
+}
