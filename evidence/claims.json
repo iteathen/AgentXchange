@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "repository": "iteathen/AgentXchange",
+  "claims": [
+    {
+      "id": "AX-INT-001",
+      "claim": "Current deterministic Agent X-Change experiment fixtures satisfy the repository's encoded checks for their frozen cases.",
+      "evidence_class": "INTERNAL-QUALIFICATION",
+      "status": "experimental internal qualification",
+      "oracle": "Repository-controlled fixtures, smoke tests, and scorers",
+      "revision": "main",
+      "falsifier": "A maintained frozen fixture fails its stated deterministic check or provenance is incomplete.",
+      "evidence": [
+        "README.md",
+        "experiments"
+      ],
+      "limitations": [
+        "Cold/model isolation does not create independent external authority or general protocol superiority."
+      ],
+      "external_reproduction": false
+    },
+    {
+      "id": "AX-EXT-001",
+      "claim": "Agent X-Change outperforms or preserves semantics better than external protocol or serialization baselines on comparable tasks.",
+      "evidence_class": "UNVALIDATED",
+      "status": "comparative external campaign not yet registered",
+      "oracle": null,
+      "revision": null,
+      "falsifier": "Comparable baseline tests fail to show the claimed property or reveal semantic/authority loss.",
+      "evidence": [
+        "evidence/external/README.md"
+      ],
+      "limitations": [
+        "No comparative external-baseline result is promoted by this registry yet."
+      ],
+      "external_reproduction": false
+    }
+  ]
+}

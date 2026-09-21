@@ -5,6 +5,7 @@
 ## Primary entry points
 
 - [README.md](https://raw.githubusercontent.com/iteathen/AgentXchange/main/README.md): project overview and documentation entry point.
+- [EVIDENCE.md](https://raw.githubusercontent.com/iteathen/AgentXchange/main/EVIDENCE.md): evidence classes, claim scope, validation limits, and external-validation path.
 - [Agent access](https://raw.githubusercontent.com/iteathen/AgentXchange/main/.agent/ACCESS.md): anonymous access routes and precedence notes.
 - [LICENSE](https://raw.githubusercontent.com/iteathen/AgentXchange/main/LICENSE): license terms.
 
