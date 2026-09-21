@@ -20,18 +20,40 @@
       "external_reproduction": false
     },
     {
+      "id": "AX-JSON-001",
+      "claim": "For the four frozen Experiment 002 relation-tuple tasks, an RFC 8259 JSON-array encoding using the same numeric relation IDs and ordered arguments round-trips the same tuples and is 1 UTF-8 byte smaller per compact packet than the equivalent whitespace-minimized Agent X-Change text form.",
+      "evidence_class": "REFERENCE-GROUNDED",
+      "status": "4/4 semantic tuple round trips; JSON 132 bytes vs compact AX 136 bytes total",
+      "oracle": "RFC 8259 JSON syntax plus frozen evidence baseline schema evidence/external/baselines/json-array-v1.json",
+      "revision": "6f5f256b4c35784c946f10c6168880196062cd64",
+      "falsifier": "Any frozen task fails exact tuple round-trip equivalence, or a byte recount under the stated encodings differs from the recorded result.",
+      "evidence": [
+        "evidence/external/baselines/json-array-v1.json",
+        "evidence/external/json-array-baseline.mjs",
+        "evidence/external/results/2026-09-20-json-array-v1.summary.json"
+      ],
+      "limitations": [
+        "Comparison uses the same shared numeric relation vocabulary and ordered arguments in both encodings.",
+        "The JSON packet schema is explicitly frozen by this campaign; RFC 8259 specifies JSON syntax, not Agent X-Change semantics.",
+        "Compact Agent X-Change strings are equivalent whitespace-minimized forms for this frozen experiment subset and are not declared canonical IsoGraph serialization.",
+        "No parser-speed, general protocol superiority, compression, binary encoding, or schema-discovery-cost claim is made."
+      ],
+      "external_reproduction": false
+    },
+    {
       "id": "AX-EXT-001",
-      "claim": "Agent X-Change outperforms or preserves semantics better than external protocol or serialization baselines on comparable tasks.",
+      "claim": "Agent X-Change has general semantic, efficiency, or security superiority over external protocol or serialization baselines.",
       "evidence_class": "UNVALIDATED",
-      "status": "comparative external campaign not yet registered",
+      "status": "broader comparative claim remains open",
       "oracle": null,
       "revision": null,
       "falsifier": "Comparable baseline tests fail to show the claimed property or reveal semantic/authority loss.",
       "evidence": [
-        "evidence/external/README.md"
+        "evidence/external/README.md",
+        "evidence/external/results/2026-09-20-json-array-v1.summary.json"
       ],
       "limitations": [
-        "No comparative external-baseline result is promoted by this registry yet."
+        "The first fair JSON-array byte baseline is unfavorable to Agent X-Change by 1 byte per frozen task; broader objectives require separate task-appropriate baselines."
       ],
       "external_reproduction": false
     }

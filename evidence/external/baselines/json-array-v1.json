@@ -1,0 +1,86 @@
+{
+  "schema": "agentx-external-json-array-baseline-v1",
+  "externalReference": {
+    "name": "JSON",
+    "specification": "RFC 8259 / STD 90",
+    "url": "https://www.rfc-editor.org/rfc/rfc8259.html"
+  },
+  "fairness": {
+    "sharedVocabulary": "Use the same numeric relation identities as the frozen Agent X-Change experiment vocabulary.",
+    "packetShape": "Outer ordered array of relations; each relation is [relationId, ...orderedArguments].",
+    "jsonSerialization": "JSON.stringify with no added whitespace.",
+    "agentXCompactComparison": "Evidence harness reconstructs an equivalent whitespace-minimized text form for the exact frozen experiment subset; it is not declared a canonical IsoGraph serialization.",
+    "excluded": [
+      "Parser-speed comparison",
+      "General protocol superiority",
+      "Compression",
+      "Binary encodings",
+      "Schema-discovery cost"
+    ]
+  },
+  "tasks": [
+    {
+      "id": "P1",
+      "file": "experiments/002/PACKET_01_MINIMAL.isg",
+      "relations": [
+        [
+          95001,
+          100,
+          200,
+          300
+        ]
+      ]
+    },
+    {
+      "id": "P2",
+      "file": "experiments/002/PACKET_02_REQUEST.isg",
+      "relations": [
+        [
+          95002,
+          100,
+          200,
+          400
+        ]
+      ]
+    },
+    {
+      "id": "P3",
+      "file": "experiments/002/PACKET_03_AUTHORIZED_REQUEST.isg",
+      "relations": [
+        [
+          95002,
+          100,
+          200,
+          400
+        ],
+        [
+          95003,
+          100,
+          200,
+          400
+        ]
+      ]
+    },
+    {
+      "id": "P4",
+      "file": "experiments/002/PACKET_04_UNRESOLVED_SUPPORT.isg",
+      "relations": [
+        [
+          95001,
+          100,
+          200,
+          500
+        ],
+        [
+          95006,
+          500,
+          501
+        ],
+        [
+          95005,
+          501
+        ]
+      ]
+    }
+  ]
+}
