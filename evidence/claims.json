@@ -11,8 +11,8 @@
       "revision": "main",
       "falsifier": "A maintained frozen fixture fails its stated deterministic check or provenance is incomplete.",
       "evidence": [
-        "README.md",
-        "experiments"
+        "https://raw.githubusercontent.com/iteathen/AgentXchange/main/README.md",
+        "https://github.com/iteathen/AgentXchange/tree/main/experiments"
       ],
       "limitations": [
         "Cold/model isolation does not create independent external authority or general protocol superiority."
@@ -28,9 +28,9 @@
       "revision": "6f5f256b4c35784c946f10c6168880196062cd64",
       "falsifier": "Any frozen task fails exact tuple round-trip equivalence, or a byte recount under the stated encodings differs from the recorded result.",
       "evidence": [
-        "evidence/external/baselines/json-array-v1.json",
-        "evidence/external/json-array-baseline.mjs",
-        "evidence/external/results/2026-09-20-json-array-v1.summary.json"
+        "https://raw.githubusercontent.com/iteathen/AgentXchange/main/evidence/external/baselines/json-array-v1.json",
+        "https://raw.githubusercontent.com/iteathen/AgentXchange/main/evidence/external/json-array-baseline.mjs",
+        "https://raw.githubusercontent.com/iteathen/AgentXchange/main/evidence/external/results/2026-09-20-json-array-v1.summary.json"
       ],
       "limitations": [
         "Comparison uses the same shared numeric relation vocabulary and ordered arguments in both encodings.",
@@ -49,8 +49,8 @@
       "revision": null,
       "falsifier": "Comparable baseline tests fail to show the claimed property or reveal semantic/authority loss.",
       "evidence": [
-        "evidence/external/README.md",
-        "evidence/external/results/2026-09-20-json-array-v1.summary.json"
+        "https://raw.githubusercontent.com/iteathen/AgentXchange/main/evidence/external/README.md",
+        "https://raw.githubusercontent.com/iteathen/AgentXchange/main/evidence/external/results/2026-09-20-json-array-v1.summary.json"
       ],
       "limitations": [
         "The first fair JSON-array byte baseline is unfavorable to Agent X-Change by 1 byte per frozen task; broader objectives require separate task-appropriate baselines."

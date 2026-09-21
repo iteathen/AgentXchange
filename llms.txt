@@ -9,6 +9,13 @@
 - [Agent access](https://raw.githubusercontent.com/iteathen/AgentXchange/main/.agent/ACCESS.md): anonymous access routes and precedence notes.
 - [LICENSE](https://raw.githubusercontent.com/iteathen/AgentXchange/main/LICENSE): license terms.
 
+## Evidence status
+
+- Evidence registry: https://raw.githubusercontent.com/iteathen/AgentXchange/main/EVIDENCE.md
+- Machine claims: https://raw.githubusercontent.com/iteathen/AgentXchange/main/evidence/claims.json
+- First external-format baseline: all 4/4 frozen semantic tuples round-trip under fair RFC 8259 JSON arrays; minified JSON is **132 bytes** versus **136 bytes** for compact equivalent AX text.
+- Therefore no raw-text byte advantage is claimed for these fixtures; broader semantic/efficiency/security superiority remains unvalidated.
+
 ## Anonymous source access
 
 - Repository: https://github.com/iteathen/AgentXchange
