@@ -101,6 +101,8 @@ The current Experiment 002 native fixture represents that idea in only:
 
 That fixture is **27 bytes** in its current human-readable form.
 
+A fair external-format baseline is now recorded: when the same frozen relation tuple is encoded as a minified RFC 8259 JSON array using the same shared numeric relation identity, JSON is **21 bytes** versus **22 bytes** for a whitespace-minimized equivalent Agent X-Change text form. Across all four Experiment 002 fixtures, JSON is 132 bytes versus 136 bytes for compact AX text. **No raw-text byte advantage is claimed for Agent X-Change on these fixtures.** See [evidence status](EVIDENCE.md) and the [frozen external comparison](evidence/external/README.md).
+
 The label ^95001 is experiment-only and is **not** a frozen Agent X-Change syntax or vocabulary. The point of the experiment is structural: a simple communication can stay simple.
 
 Nothing about that minimal exchange automatically means:
